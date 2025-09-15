@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <!-- google tag manager -->
+    <meta
+      name="description"
+      content="Contact Tesselonix to discuss your business needs, request support, or learn more about our custom software and data solutions."
+    />
     <!-- favicon -->
     <link rel="shortcut icon" href="/images/favicon.png" />
     <!-- theme meta -->
@@ -116,7 +120,7 @@
           <a href="/" class="navbar-brand inline-block">
             <img
               src="images/main/logo-tesselonix.svg"
-              alt="CloudPeak Astro New Logo"
+              alt="Tesselonix logo"
               loading="lazy"
               decoding="async"
               style="height: 50px; width: 175px"
@@ -242,7 +246,7 @@
             <a
               class="btn btn-secondary"
               aria-label="Get Started"
-              href="https://themefisher.com/products/cloudpeak-astro"
+              href="/our-services.html"
             >
               Get Started
             </a>
@@ -252,7 +256,7 @@
           <a
             class="btn btn-secondary hidden lg:inline-block"
             aria-label="Get Started"
-            href="https://themefisher.com/products/cloudpeak-astro"
+            href="/our-services.html"
           >
             Get Started
           </a>
@@ -309,12 +313,16 @@
               <div
                 class="border border-border inside-shadow shadow-shadow/60 p-10 rounded-4xl"
               >
-                <form action="#" method="post">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html" aria-describedby="contact-help">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <!-- Honeypot field -->
+                  <div class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                  </div>
+                  <p id="contact-help" class="sr-only">All fields marked with * are required.</p>
                   <div class="grid grid-cols-2 gap-6">
                     <div class="col-span-2 sm:col-span-1">
-                      <label for="firstName" class="form-label"
-                        >First Name *</label
-                      >
+                      <label for="firstName" class="form-label">First Name *</label>
                       <input
                         type="text"
                         id="firstName"
@@ -326,9 +334,7 @@
                       />
                     </div>
                     <div class="col-span-2 sm:col-span-1">
-                      <label for="lastName" class="form-label"
-                        >Last Name *</label
-                      >
+                      <label for="lastName" class="form-label">Last Name *</label>
                       <input
                         type="text"
                         id="lastName"
@@ -364,9 +370,7 @@
                       />
                     </div>
                     <div class="col-span-2">
-                      <label for="message" class="form-label"
-                        >Write Message *</label
-                      >
+                      <label for="message" class="form-label">Write Message *</label>
                       <textarea
                         id="message"
                         name="message"
@@ -383,12 +387,15 @@
                         class="btn bg-secondary py-5 px-7 border-secondary text-light leading-none"
                       >
                         Send Message
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+                      <div class="flex items-center gap-4 flex-wrap">
+                        <button
+                          type="submit"
+                          class="btn bg-secondary py-5 px-7 border-secondary text-light leading-none"
+                        >
+                          Send Message
+                        </button>
+                        <p class="text-xs text-white/50" aria-live="polite">We’ll never share your information.</p>
+                      </div>
           </div>
         </div>
       </section>
@@ -634,9 +641,9 @@
               class="flex flex-col gap-y-8 lg:flex-row items-start lg:items-center"
             >
               <a href="/" class="navbar-brand inline-block">
-                <img
+                  <img
                   src="images/main/logo-tesselonix.svg"
-                  alt="CloudPeak Astro New Logo"
+                  alt="Tesselonix logo"
                   loading="lazy"
                   decoding="async"
                   style="height: 50px; width: 175px"
