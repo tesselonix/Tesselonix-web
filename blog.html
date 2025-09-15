@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Cloudpeak Astro</title>
+    <link rel="stylesheet" href="/_astro/Base.DvB2Xm2x.css" />
+    <link rel="stylesheet" href="/_astro/_regular_.B5LzyFPV.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/animation.css" />
+  </head>
+  <body>
+    <header class="header z-30">
+      <nav class="navbar container">
+        <!-- logo -->
+        <div class="order-0">
+          <a href="/" class="navbar-brand inline-block">
+            <img
+              src="/images/main/logo-tesselonix.svg"
+              alt="Tesselonix"
+              loading="lazy"
+              decoding="async"
+              style="height: 50px; width: 175px"
+              fetchpriority="auto"
+              width="350"
+              height="100"
+              class="inline-block"
+            />
+          </a>
+        </div>
+        <!-- navbar toggler -->
+        <input
+          id="nav-toggle"
+          type="checkbox"
+          class="hidden"
+          title="nav-toggle"
+        />
+        <label
+          for="nav-toggle"
+          class="order-3 cursor-pointer flex items-center lg:hidden text-white/70 lg:order-1"
+        >
+          <div class="space-y-3 w-6 -translate-y-[20%]" id="show-button">
+            <title class="hidden">Menu Open</title>
+            <div
+              class="w-full h-[2px] bg-text transition-transform"
+              id="ham_top"
+            ></div>
+            <div
+              class="w-full h-[2px] bg-text transition-transform"
+              id="ham_bottom"
+            ></div>
+          </div>
+        </label>
+        <!-- /navbar toggler -->
+        <ul
+          id="nav-menu"
+          class="navbar-nav inside-shadow shadow-shadow/30 lg:shadow-none order-3 hidden lg:order-1 lg:flex items-center lg:w-auto lg:space-x-2 lg:pb-0"
+        >
+          <li id="all-pages" class="nav-item nav-dropdown group relative">
+            <span class="nav-link inline-flex items-center cursor-pointer">
+              All Pages
+              <svg
+                class="h-4 w-4 fill-current group-hover:-rotate-180 ml-2 transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                ></path>
+              </svg>
+            </span>
+            <ul
+              class="hidden border border-border p-8 mb-2 lg:mb-0 lg:transition-[opacity_transform] lg:duration-500 lg:absolute lg:invisible lg:group-hover:visible lg:opacity-0 lg:group-hover:opacity-100 lg:scale-95 lg:group-hover:scale-100 lg:group-hover:grid lg:grid lg:grid-cols-3 lg:gap-x-8 min-w-max nav-dropdown-list lg:inside-shadow shadow-shadow/5"
+              id="all-pages-dropdown"
+            >
+              <li class="nav-item">
+                <a
+                  href="/about.html"
+                  aria-label="About"
+                  class="nav-link inline-flex items-center cursor-pointer"
+                >
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/our-services.html"
+                  aria-label="Our Services"
+                  class="nav-link inline-flex items-center cursor-pointer"
+                >
+                  Our Services
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/contact.html"
+                  aria-label="Contact Us"
+                  class="nav-link inline-flex items-center cursor-pointer"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/privacy-policy" class="nav-dropdown-link">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/404" class="nav-dropdown-link"> 404 Page </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="about.html"
+              aria-label="About"
+              class="nav-link inline-flex items-center cursor-pointer"
+            >
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/our-services.html"
+              aria-label="Our Services"
+              class="nav-link inline-flex items-center cursor-pointer"
+            >
+              Our Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/contact.html"
+              aria-label="Contact Us"
+              class="nav-link inline-flex items-center cursor-pointer"
+            >
+              Contact Us
+            </a>
+          </li>
+          <li class="inline-block lg:hidden mt-4 lg:mt-0">
+            <a
+              class="btn btn-secondary"
+              aria-label="Get Started"
+              href="https://themefisher.com/products/tesselonix"
+            >
+              Get Started
+            </a>
+          </li>
+        </ul>
+        <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+          <a
+            class="btn btn-secondary hidden lg:inline-block"
+            aria-label="Get Started"
+            href="https://themefisher.com/products/tesselonix"
+          >
+            Get Started
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="text-4xl font-bold mb-6 text-center">Our Blog</h1>
+      <section class="container mb-12">
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition"
+          >
+            <div
+              class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-8 h-8 text-blue-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 10c-4.418 0-8-1.79-8-4V7c0-2.21 3.582-4 8-4s8 1.79 8 4v7c0 2.21-3.582 4-8 4z"
+                />
+              </svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Welcome to Our Blog!</h2>
+            <p class="date text-gray-400 mb-2">September 12, 2025</p>
+            <p class="text-gray-400">
+              Stay tuned for updates, news, and insights from Cloudpeak Astro.
+              We will share tips, company news, and more here soon!
+            </p>
+          </div>
+          <div
+            class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition"
+          >
+            <div
+              class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-8 h-8 text-green-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 17a4 4 0 01-4-4V7a4 4 0 018 0v6a4 4 0 01-4 4zm0 0v2m0 0h2m-2 0H9"
+                />
+              </svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">
+              How We Help Businesses Grow
+            </h2>
+            <p class="date text-gray-400 mb-2">August 30, 2025</p>
+            <p class="text-gray-400">
+              Discover how Cloudpeak Astro partners with companies to deliver
+              scalable, secure, and innovative digital solutions tailored to
+              your needs.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="pb-11 border-b border-white/10">
+          <div
+            class="flex flex-col xl:flex-row items-start lg:items-center justify-between gap-8"
+          >
+            <div
+              class="flex flex-col gap-y-8 lg:flex-row items-start lg:items-center"
+            >
+              <a href="/" class="navbar-brand inline-block">
+                <img
+                  src="/images/main/logo-tesselonix.svg"
+                  alt="CloudPeak Astro"
+                  loading="lazy"
+                  decoding="async"
+                  style="height: 50px; width: 175px"
+                  fetchpriority="auto"
+                  width="350"
+                  height="100"
+                  class="inline-block"
+                />
+              </a>
+              <div class="w-[1px] bg-white h-5 hidden lg:block mx-8"></div>
+              <p class="xl:max-w-[420px]">
+                Solutions that drive success and propel your business forward
+              </p>
+            </div>
+            <ul class="flex flex-col sm:flex-row flex-wrap gap-8">
+              <li>
+                <a
+                  href="/integration"
+                  class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                >
+                  <span>Integration</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/our-services.html"
+                  class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                >
+                  <span>Our Services</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                >
+                  <span>Contact Us</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="pt-11 pb-16">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center gap-8 justify-between"
+          >
+            <div class="order-2 lg:order-1">
+              <p class="mb-1.5">
+                Copyright © 2025
+                <a href="https://themefisher.com/">Themefisher</a>. <br />
+                All Rights Reserved
+              </p>
+            </div>
+            <div class="order-1 lg:order-2">
+              <ul class="flex flex-col sm:flex-row flex-wrap gap-8">
+                <li>
+                  <a
+                    href="/privacy-policy"
+                    class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                  >
+                    <span>Privacy Policy</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/terms-conditions"
+                    class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                  >
+                    <span>Terms &amp; Conditions</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="order-3 lg:order-3">
+              <!--social links-->
+              <ul class="text-white flex items-center gap-5">
+                <li>
+                  <a
+                    aria-label="facebook"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow "
+                    class="inline-block hover:text-primary transition-colors duration-300 text-[22px]"
+                  >
+                    <span class="sr-only">facebook</span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="instagram"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow "
+                    class="inline-block hover:text-primary transition-colors duration-300 text-[22px]"
+                  >
+                    <span class="sr-only">instagram</span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      class="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="X"
+                    href="https://x.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow "
+                    class="inline-block hover:text-primary transition-colors duration-300 text-[22px]"
+                  >
+                    <span class="sr-only">X</span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="linkedin"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow "
+                    class="inline-block hover:text-primary transition-colors duration-300 text-[22px]"
+                  >
+                    <span class="sr-only">linkedin</span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      class="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

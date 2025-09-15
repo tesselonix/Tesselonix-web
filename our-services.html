@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Tesselonix</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="/_astro/Base.DvB2Xm2x.css" />
+  <link rel="stylesheet" href="/_astro/_regular_.B5LzyFPV.css" />
+  <link rel="stylesheet" href="./style/animation.css" />
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="header z-30">
+      <nav class="navbar container">
+        <!-- logo -->
+        <div class="order-0">
+          <a href="/" class="navbar-brand inline-block">
+            <img
+              src="/images/main/logo-tesselonix.svg"
+              alt="Tesselonix"
+              loading="lazy"
+              decoding="async"
+              style="height: 50px; width: 175px"
+              fetchpriority="auto"
+              width="350"
+              height="100"
+              class="inline-block"
+            />
+          </a>
+        </div>
+    <!-- Modern Service Detail Modal with Glassmorphism -->
+  <div id="service-modal" class="fixed inset-0 z-50 modal-backdrop flex justify-center items-center hidden" style="align-items: center; justify-content: center;">
+  <div class="modal-content" style="margin-top: 0; margin-bottom: 0;">
+        <button id="close-service-modal" aria-label="Close Modal">&times;</button>
+        
+        <!-- Modal Header with Glass Effect -->
+        <div class="modal-header">
+          <h2 id="modal-title" class="modal-title">Service Title</h2>
+          <h3 id="modal-subtitle" class="modal-subtitle">Service Subtitle</h3>
+          <p id="modal-description" class="modal-description">Service description will be displayed here.</p>
+        </div>
+        
+        <!-- Content Grid -->
+        <div class="content-grid grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Detailed Overview Section -->
+          <div class="content-section">
+            <div class="section-title">
+              <span class="icon">💡</span>
+              Detailed Overview
+            </div>
+            <p id="modal-overview" class="text-gray-200 leading-relaxed">
+              Detailed overview content will be displayed here.
+            </p>
+          </div>
+          
+          <!-- Technologies & Advantage Section -->
+          <div class="space-y-4">
+            <!-- Key Technologies -->
+            <div class="content-section">
+              <div class="section-title">
+                <span class="icon">🛠️</span>
+                Key Tools & Technologies
+              </div>
+              <div id="modal-technologies" class="flex flex-wrap gap-2">
+                <!-- Technologies will be inserted here -->
+              </div>
+            </div>
+            
+            <!-- Client Advantage -->
+            <div class="content-section">
+              <div class="section-title">
+                <span class="icon">🚀</span>
+                Client Advantage
+              </div>
+              <p id="modal-advantage" class="text-gray-300 leading-relaxed">
+                Client advantages will be displayed here.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Features Section -->
+        <div class="content-section">
+          <div class="section-title">
+            <span class="icon">⭐</span>
+            Key Features & Benefits
+          </div>
+          <div id="modal-features" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <!-- Features will be inserted here -->
+          </div>
+        </div>
+        
+        <!-- Call to Action Section -->
+        <div class="cta-section">
+          <p class="text-gray-300 mb-4 text-lg">Ready to transform your business with our expert solutions?</p>
+          <button class="cta-button" onclick="window.location.href='/contact.html'">
+            Get Started Today →
+          </button>
+        </div>
+      </div>
+    </div>
+        <!-- navbar toggler -->
+        <input
+          id="nav-toggle"
+          type="checkbox"
+          class="hidden"
+          title="nav-toggle"
+        />
+        <label
+          for="nav-toggle"
+          class="order-3 cursor-pointer flex items-center lg:hidden text-white/70 lg:order-1"
+        >
+          <div class="space-y-3 w-6 -translate-y-[20%]" id="show-button">
+            <title class="hidden">Menu Open</title>
+            <div
+              class="w-full h-[2px] bg-text transition-transform"
+              id="ham_top"
+            ></div>
+            <div
+              class="w-full h-[2px] bg-text transition-transform"
+              id="ham_bottom"
+            ></div>
+          </div>
+        </label>
+        <!-- /navbar toggler -->
+        <ul
+          id="nav-menu"
+          class="navbar-nav inside-shadow shadow-shadow/30 lg:shadow-none order-3 hidden lg:order-1 lg:flex items-center lg:w-auto lg:space-x-2 lg:pb-0"
+        >
+          <li id="all-pages" class="nav-item nav-dropdown group relative">
+            <span class="nav-link inline-flex items-center cursor-pointer">
+              All Pages
+              <svg
+                class="h-4 w-4 fill-current group-hover:-rotate-180 ml-2 transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                ></path>
+              </svg>
+            </span>
+            <ul
+              class="hidden border border-border p-8 mb-2 lg:mb-0 lg:transition-[opacity_transform] lg:duration-500 lg:absolute lg:invisible lg:group-hover:visible lg:opacity-0 lg:group-hover:opacity-100 lg:scale-95 lg:group-hover:scale-100 lg:group-hover:grid lg:grid lg:grid-cols-3 lg:gap-x-8 min-w-max nav-dropdown-list lg:inside-shadow shadow-shadow/5"
+              id="all-pages-dropdown"
+            >
+              <li class="nav-dropdown-item">
+                <a href="/elements" class="nav-dropdown-link"> Elements </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/about" class="nav-dropdown-link"> About </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/changelog" class="nav-dropdown-link"> Changelog </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/integration" class="nav-dropdown-link">
+                  Integration
+                </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/case" class="nav-dropdown-link"> Case Studies </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/terms-conditions" class="nav-dropdown-link">
+                  Terms &amp; Conditions
+                </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/blog" class="nav-dropdown-link"> Blog </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/book-demo" class="nav-dropdown-link">
+                  Book a Free Demo
+                </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/privacy-policy" class="nav-dropdown-link">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="nav-dropdown-item">
+                <a href="/404" class="nav-dropdown-link"> 404 Page </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/"
+              aria-label="Home"
+              class="nav-link inline-flex items-center cursor-pointer"
+            >
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/about.html"
+              aria-label="About"
+              class="nav-link inline-flex items-center cursor-pointer"
+            >
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/contact.html"
+              aria-label="Contact Us"
+              class="nav-link inline-flex items-center cursor-pointer"
+            >
+              Contact Us
+            </a>
+          </li>
+          <li class="inline-block lg:hidden mt-4 lg:mt-0">
+            <a
+              class="btn btn-secondary"
+              aria-label="Get Started"
+              href="https://themefisher.com/products/tesselonix"
+            >
+              Get Started
+            </a>
+          </li>
+        </ul>
+        <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+          <a
+            class="btn btn-secondary hidden lg:inline-block"
+            aria-label="Get Started"
+            href="https://themefisher.com/products/tesselonix"
+          >
+            Get Started
+          </a>
+        </div>
+      </nav>
+    </header>
+    <script type="module">
+      const a = () => {
+        const e = document.getElementById("all-pages");
+        e &&
+          e.addEventListener("click", () => {
+            const t = document.getElementById("all-pages-dropdown");
+            t && t.classList.toggle("active");
+          });
+      };
+      document.addEventListener("astro:page-load", () => {
+        a();
+      });
+    </script>
+    </header>
+  <main id="main-content">
+    <section class="section pt-20 xl:pt-24">
+      <div class="container">
+        <h1 class="text-4xl font-bold mb-6 text-center">Our Services</h1>
+        <p class="mb-12 text-center text-lg text-gray-300">Discover the range of services Tesselonix offers to help your business thrive in the digital age.</p>
+
+
+        <!-- Service Nav Toggle Start -->
+        <div class="flex justify-center mb-12">
+          <nav class="inline-flex bg-light/10 rounded-full shadow p-1 gap-2" aria-label="Service Navigation">
+            <button class="px-5 py-2 rounded-full font-medium text-white bg-primary transition-colors hover:bg-primary/80 focus:bg-primary/90 focus:outline-none" id="nav-custom-software">
+              Custom Software & Product Development
+            </button>
+            <button class="px-5 py-2 rounded-full font-medium text-white bg-transparent hover:bg-primary/20 focus:bg-primary/30 focus:outline-none" id="nav-data-analytics">
+              Data & Analytics Services
+            </button>
+            <button class="px-5 py-2 rounded-full font-medium text-white bg-transparent hover:bg-primary/20 focus:bg-primary/30 focus:outline-none" id="nav-tech-it">
+              Technology & IT Services
+            </button>
+          </nav>
+        </div>
+        <!-- Service Nav Toggle End -->
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="custom-software">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Custom Software</h2>
+            <p class="text-gray-400">We build precision-built applications—from internal tools to client portals—engineered for your exact workflow. This moves you beyond the limitations of generic, off-the-shelf products, providing you with a custom-fit system that serves as a true competitive advantage.</p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="data-analytics">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Data & Analytics</h2>
+            <p class="text-gray-400">We focus on transforming raw, scattered data into predictive insights with custom BI dashboards and analytics platforms. Our architects design the data pipelines and warehouses needed to create a single, reliable source of truth, enabling confident, real-time decision-making.</p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="tech-it">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 001.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Tech & IT Services</h2>
+            <p class="text-gray-400">We provide full-stack engineering for the modern business. From foundational cloud infrastructure and high-performance applications to world-class UI/UX and ironclad cybersecurity, we deliver the complete spectrum of technical expertise required to build a resilient digital presence.</p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Mobile App Development Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="mobile-app">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Mobile App Development</h2>
+            <p class="text-gray-400">
+              <strong>Your Brand, in Their Pocket.</strong><br>
+              We architect and build beautiful, high-performance native apps for iOS & Android that don't just function—they captivate your audience and become an essential part of their daily lives.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- UI/UX Design & Strategy Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="uiux-design">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">UI/UX Design & Strategy</h2>
+            <p class="text-gray-400">
+              <strong>Intuitive Design, Unforgettable Experience.</strong><br>
+              We architect beautiful interfaces (UI) built on a foundation of deep user empathy (UX) to create a seamless, intuitive, and unforgettable digital experience for your customers.<br>
+              <span class="block mt-2 text-xs text-blue-300">We apply proven principles from <a href="https://lawsofux.com/" target="_blank" rel="noopener" class="underline hover:text-blue-400">lawsofux.com</a> to ensure every interaction is meaningful and user-centered.</span>
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Web Application Development Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="web-app">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Web Application Development</h2>
+            <p class="text-gray-400">
+              <strong>Digital Flagship, Engineered.</strong><br>
+              We go beyond simple websites to architect and build powerful, high-performance web applications that serve as the scalable, operational core of your business.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Strategic Social Media Marketing Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="social-media">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Strategic Social Media Marketing</h2>
+            <p class="text-gray-400">
+              <strong>Beyond the Likes: Social Media That Converts.</strong><br>
+              We go beyond simple posting to architect data-driven social media strategies that build your brand's authority, create a loyal community, and convert followers into customers.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Strategic Graphic Design Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="graphic-design">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Strategic Graphic Design</h2>
+            <p class="text-gray-400">
+              <strong>Your Brand, Beautifully Visualized.</strong><br>
+              We go beyond simple logos and layouts to architect a cohesive and stunning visual identity for your brand that builds instant trust and makes you unforgettable.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Data-Driven Digital Marketing Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="digital-marketing">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Data-Driven Digital Marketing</h2>
+            <p class="text-gray-400">
+              <strong>Your Growth, Engineered.</strong><br>
+              We architect full-funnel digital marketing strategies—from SEO to paid ads—that are built on a foundation of deep data analytics to deliver predictable, measurable, and scalable growth.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Branding & Identity Design Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="branding-identity">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Branding & Identity Design</h2>
+            <p class="text-gray-400">
+              <strong>Your Identity, Architected.</strong><br>
+              We architect your entire brand identity—from your logo and messaging to your visual language—creating a cohesive and powerful system that makes you the unforgettable, go-to choice in your market.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Proactive Cybersecurity Solutions Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="cybersecurity">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 text-cyan-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zm0 1c-2.21 0-4 1.79-4 4v1h8v-1c0-2.21-1.79-4-4-4zm0-10C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Proactive Cybersecurity Solutions</h2>
+            <p class="text-gray-400">
+              <strong>Your Digital Fortress, Architected.</strong><br>
+              We go beyond simple firewalls to architect proactive, multi-layered security solutions that protect your data, your customers, and your hard-earned reputation from modern threats.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Efficient Cross-Platform Development (React Native) Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="react-native">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 text-sky-400"><circle cx="12" cy="12" r="10" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Efficient Cross-Platform Development</h2>
+            <p class="text-gray-400">
+              <strong>Twice the Impact, Half the Time.</strong><br>
+              We architect high-performance mobile apps using React Native, allowing you to launch on both iOS and Android from a single codebase, dramatically reducing your time-to-market and development costs.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Custom E-commerce Development Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="ecommerce">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 text-orange-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A2 2 0 007.5 19h9a2 2 0 001.85-1.3L17 13M7 13V6h10v7"/></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Custom E-commerce Development</h2>
+            <p class="text-gray-400">
+              <strong>The High-Conversion Shopping Experience.</strong><br>
+              We go beyond generic templates to architect custom, high-conversion e-commerce platforms that provide a flawless experience for your customers and a powerful backend for you.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Intelligent Process Automation (IPA) Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="ai-automation">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 text-violet-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Intelligent Process Automation (IPA)</h2>
+            <p class="text-gray-400">
+              <strong>The Intelligent Workforce That Never Sleeps.</strong><br>
+              We build custom AI-powered automation that goes beyond simple tasks to handle complex, decision-based workflows, freeing your most valuable employees to focus on strategic growth.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- Software Maintenance & Support Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="software-maintenance">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 text-amber-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Your Digital Assets, Future-Proofed.</h2>
+            <p class="text-gray-400">
+              <strong>Proactive Maintenance & Support</strong><br>
+              We provide a proactive partnership to ensure your critical software runs flawlessly, securely, and at peak performance, protecting your investment and providing total peace of mind.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- AI & Machine Learning Solutions Service Card -->
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="ai-ml">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 text-fuchsia-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m4 0h-1v4h-1m-4 0h-1v-4H7m4 0h-1v4h-1"/></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Your Data's Predictive Power, Unlocked.</h2>
+            <p class="text-gray-400">
+              <strong>Custom AI & Machine Learning Solutions</strong><br>
+              We go beyond simple analytics to architect and build custom machine learning models that can forecast trends, automate complex decisions, and give you a predictive edge in your market.
+            </p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="other">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 text-pink-500"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Automation & Integration</h2>
+            <p class="text-gray-400">Our primary goal is eliminating manual work by building intelligent automation and seamlessly connecting your entire software ecosystem. We architect a frictionless operational flow that handles repetitive tasks, freeing your team to focus on high-value strategic initiatives.</p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <div class="border border-border inside-shadow p-8 rounded-4xl flex flex-col items-center text-center bg-light/10 hover:bg-light/20 transition service-card expandable-card" data-service="other">
+            <button class="expand-close-btn" aria-label="Close" style="display:none">&times;</button>
+            <div class="w-[60px] h-[60px] bg-light rounded-full grid place-items-center text-primary mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 text-purple-500"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 018 0v2M5 10V7a5 5 0 0110 0v3m-6 4h6"/></svg>
+            </div>
+            <h2 class="text-xl font-semibold mb-2">Strategic Partnership</h2>
+            <p class="text-gray-400">Beyond the initial build, we provide ongoing architectural guidance and support to ensure your technology scales with your ambition. We act as your long-term partner, proactively evolving your systems to meet future challenges and capitalize on new opportunities.</p>
+            <div class="expand-details" style="display:none"></div>
+          </div>
+          <!-- No services message -->
+          <div id="no-services-message" class="col-span-full text-center text-gray-400 text-lg hidden">No services available</div>
+        </div>
+      </div>
+    </section>
+  </main>
+    <footer>
+    <script src="script/service-modals.js"></script>
+      <div class="container">
+        <div class="pb-11 border-b border-white/10">
+          <div
+            class="flex flex-col xl:flex-row items-start lg:items-center justify-between gap-8"
+          >
+            <div
+              class="flex flex-col gap-y-8 lg:flex-row items-start lg:items-center"
+            >
+              <a href="/" class="navbar-brand inline-block">
+                <img
+                  src="/images/main/logo-tesselonix.svg"
+                  alt="CloudPeak Astro"
+                  loading="lazy"
+                  decoding="async"
+                  style="height: 50px; width: 175px"
+                  fetchpriority="auto"
+                  width="350"
+                  height="100"
+                  class="inline-block"
+                />
+              </a>
+              <div class="w-[1px] bg-white h-5 hidden lg:block mx-8"></div>
+              <p class="xl:max-w-[420px]">
+                Solutions that drive success and propel your business forward
+              </p>
+            </div>
+            <ul class="flex flex-col sm:flex-row flex-wrap gap-8">
+              <li>
+                <a
+                  href="/integration"
+                  class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                >
+                  <span>Integration</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/our-services.html"
+                  class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                >
+                  <span>Our Services</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact.html"
+                  class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                >
+                  <span>Contact Us</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="pt-11 pb-16">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center gap-8 justify-between"
+          >
+            <div class="order-2 lg:order-1">
+              <p class="mb-1.5">
+                Copyright © 2025
+                <a href="https://themefisher.com/">Themefisher</a>. <br />
+                All Rights Reserved
+              </p>
+            </div>
+            <div class="order-1 lg:order-2">
+              <ul class="flex flex-col sm:flex-row flex-wrap gap-8">
+                <li>
+                  <a
+                    href="/privacy-policy"
+                    class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                  >
+                    <span>Privacy Policy</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/terms-conditions"
+                    class="flex items-center gap-x-1 hover:text-white transition-colors duration-300"
+                  >
+                    <span>Terms & Conditions</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="order-3 lg:order-3">
+              <!--social links-->
+              <ul class="text-white flex items-center gap-5">
+                <li>
+                  <a
+                    aria-label="facebook"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow "
+                    class="inline-block hover:text-primary transition-colors duration-300 text-[22px]"
+                  >
+                    <span class="sr-only">facebook</span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="instagram"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow "
+                    class="inline-block hover:text-primary transition-colors duration-300 text-[22px]"
+                  >
+                    <span class="sr-only">instagram</span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      class="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="X"
+                    href="https://x.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow "
+                    class="inline-block hover:text-primary transition-colors duration-300 text-[22px]"
+                  >
+                    <span class="sr-only">X</span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="linkedin"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow "
+                    class="inline-block hover:text-primary transition-colors duration-300 text-[22px]"
+                  >
+                    <span class="sr-only">linkedin</span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      class="inline-block"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

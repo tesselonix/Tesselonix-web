@@ -1,0 +1,555 @@
+/* Service Card Entrance Animation */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.service-card {
+  opacity: 0;
+  animation: cardFadeIn 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.service-card.animated {
+  opacity: 1;
+}
+/* Enhanced hover pop */
+.service-card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 24px 40px -8px rgba(0, 0, 0, 0.18),
+    0 8px 16px -8px rgba(0, 0, 0, 0.08);
+}
+/* --- Moved from our-services.html --- */
+/* Service Card Hover Effects */
+.service-card {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+/* Modern Modal Design with Glassmorphism */
+.modal-backdrop {
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#service-modal {
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#service-modal:not(.hidden) {
+  opacity: 1;
+}
+/* Glass modal content with beautiful animations */
+.modal-content {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  border-radius: 1.5rem;
+  transform: scale(0.9) translateY(30px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 900px;
+  width: 95%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.modal-content.show {
+  transform: scale(1) translateY(0);
+}
+/* Custom scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* Modern close button with glass effect */
+#close-service-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+#close-service-modal:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #fff;
+  transform: scale(1.1);
+}
+/* Enhanced title section */
+.modal-header {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+.modal-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.modal-description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+/* Content sections with glass cards */
+.content-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+.content-section:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(102, 126, 234, 0.9);
+  margin-bottom: 0.75rem;
+}
+.section-title .icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+/* Technology tags with glass effect */
+.tech-tag {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+.tech-tag:hover {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.4);
+  transform: translateY(-1px);
+}
+/* Feature items with smooth animations */
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: slideInUp 0.4s ease-out forwards;
+}
+.feature-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.feature-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.feature-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.feature-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.feature-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.feature-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.feature-check {
+  color: #10b981;
+  font-weight: bold;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+/* Call to action button with glass effect */
+.cta-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.cta-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 1.5rem;
+    max-height: 90vh;
+  }
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  #close-service-modal {
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+.service-card {
+  cursor: pointer;
+  z-index: 1;
+  transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.expandable-card.expanded {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) scale(1.08) !important;
+  width: 95vw !important;
+  max-width: 700px !important;
+  max-height: 65vh !important;
+  background: rgba(5, 7, 26, 0.9) !important;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset !important;
+  z-index: 1002 !important;
+  overflow-y: auto !important;
+  cursor: default;
+  border-radius: 2rem !important;
+  padding: 1.25rem 1rem 1rem 1rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Hide scrollbar for all browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.expandable-card.expanded::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Overlay when a card is expanded */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  transition: background 0.28s ease, backdrop-filter 0.28s ease;
+  z-index: 1000;
+}
+body.has-expanded-card::before {
+  background: rgba(0, 0, 0, 0.55);
+  pointer-events: auto;
+  backdrop-filter: blur(6px);
+}
+
+/* Entry/exit animations for expanded popup cards */
+.expandable-card.expanded.transform-in {
+  animation: popup-in 0.34s cubic-bezier(0.2, 0, 0, 1) forwards;
+}
+.expandable-card.expanded.transform-out {
+  animation: popup-out 0.26s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+@keyframes popup-in {
+  0% {
+    transform: translate(-50%, -50%) scale(0.92);
+    opacity: 0;
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes popup-out {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.92);
+    opacity: 0;
+  }
+}
+
+.expandable-card .expand-close-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.7rem;
+  color: #fff;
+  z-index: 1003;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: background 0.2s;
+}
+.expandable-card .expand-close-btn:hover {
+  background: rgba(239, 68, 68, 0.25);
+  color: #fff;
+}
+.expandable-card .expand-details {
+  width: 100%;
+  margin-top: 1.5rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  display: block;
+}
+/* Subtle fade-up animation for cards and sections */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Glass Card Effect - Unified for Home and About Pages */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 40px rgba(0, 118, 255, 0.25);
+  border-color: rgba(0, 118, 255, 0.5);
+}
+/* Fonts and root variables */
+@font-face {
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Sora";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sora/v16/xMQOuFFYT72X5wkB_18qmnndmSdSnk-DKQJDA8i1P4xdNw.woff2);
+}
+@font-face {
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Sora";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sora/v16/xMQOuFFYT72X5wkB_18qmnndmSdSnk-NKQJDA8i1P4w.woff2);
+}
+:root {
+  --font-primary: "Sora", "_font_fallback_172155557155", sans-serif;
+}
+@font-face {
+  font-family: "_font_fallback_172155557155";
+  size-adjust: 113.97%;
+  src: local("Arial");
+  ascent-override: 85.11%;
+  descent-override: 25.44%;
+  line-gap-override: 0%;
+}
+
+/* Skills section styles */
+.skills-section {
+  width: 100%;
+  padding: 2rem 0;
+  background: none;
+}
+.scroller {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+}
+.scroller__inner {
+  display: flex;
+  gap: 4rem;
+  width: max-content;
+  animation: scroll-skills 30s linear infinite;
+}
+.scroller:hover .scroller__inner {
+  animation-play-state: paused;
+}
+@keyframes scroll-skills {
+  to {
+    transform: translateX(calc(-50% - 2rem));
+  }
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+}
+.skill-item i {
+  font-size: 2.5rem;
+  color: #9ca3af;
+}
+.skill-item i.devicon-python-plain {
+  color: #3776ab;
+}
+.skill-item i.devicon-java-plain {
+  color: #f89820;
+}
+.skill-item i.devicon-javascript-plain {
+  color: #f7df1e;
+}
+.skill-item i.devicon-html5-plain {
+  color: #e34f26;
+}
+.skill-item i.devicon-css3-plain {
+  color: #1572b6;
+}
+.skill-item i.devicon-bootstrap-plain {
+  color: #7952b3;
+}
+.skill-item i.devicon-git-plain {
+  color: #f05032;
+}
+.skill-item i.devicon-docker-plain {
+  color: #2496ed;
+}
+.skill-item i.devicon-amazonwebservices-original {
+  color: #ff9900;
+}
+.skill-item i.devicon-azure-plain {
+  color: #0078d4;
+}
+.skill-item i.devicon-vscode-plain {
+  color: #007acc;
+}
+.skill-item i.devicon-mysql-plain,
+.skill-item i.devicon-postgresql-plain {
+  color: #4479a1;
+}
+.skill-item i.devicon-r-original {
+  color: #276dc3;
+}
+.skill-item i.devicon-apachespark-original {
+  color: #e25a1c;
+}
+.skill-item i.devicon-hadoop-plain {
+  color: #666699;
+}
+.skill-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+
+astro-island,
+astro-slot,
+astro-static-slot {
+  display: contents;
+}
+
+/* Adjusted alignment and spacing for expanded cards */
+.expandable-card.expanded {
+  justify-content: space-evenly !important; /* Distribute content evenly */
+  gap: 1.5rem !important; /* Add spacing between child elements */
+  padding: 2rem 1.5rem !important; /* Increase padding for better spacing */
+}
